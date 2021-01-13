@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider Animation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        .Slider1,.Slider2,.Slider3,.Slider4{
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(-50%,-50%);
+
+        }
+        img{
+            width: 120%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        .Slider1{
+            animation: Slider1 5s linear infinite;
+        }
+        .Slider2{
+            animation: Slider2 5s linear infinite;
+        }
+        .Slider3{
+            animation: Slider3 5s linear infinite;
+        }
+        .Slider4{
+            animation: Slider4 5s linear infinite;
+        }
+
+        @keyframes Slider1 {
+            0%{
+                visibility: visible;
+            }
+            25%{
+               visibility: hidden;
+
+            }
+            50%{
+                visibility: hidden;
+
+            }
+            75%{
+                visibility: hidden;
+
+
+            }
+            100%{
+                visibility: visible;
+
+            }
+
+        }
+        @keyframes Slider2 {
+            0%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+
+            }
+            50%{
+                visibility: visible;
+
+            }
+            75%{
+                visibility: hidden;
+
+
+            }
+            100%{
+                visibility: hidden;
+
+            }
+
+        }
+        @keyframes Slider3 {
+            0%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+
+            }
+            50%{
+                visibility: hidden;
+
+            }
+            75%{
+                visibility: visible;
+
+
+            }
+            100%{
+                visibility: hidden;
+
+            }
+
+        }
+        @keyframes Slider4 {
+            0%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+
+            }
+            50%{
+                visibility: hidden;
+
+            }
+            75%{
+                visibility: hidden;
+
+
+            }
+            100%{
+                visibility: visible;
+
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="Slider1">
+    <img src="assests/img/eacf8a7c77c4889b12f65143ff1681e9.jpg" width="1360" height="620">
+</div>
+<div class="Slider2">
+    <img src="assests/img/bird-1541297__480.jpg" width="1360" height="620">
+</div>
+<div class="Slider3">
+    <img src="assests/img/luke-stackpoole-mStq-dtsXCQ-unsplash.jpg"width="1360" height="620">
+</div>
+<div class="Slider4">
+    <img src="assests/img/nature-3082832__480.jpg"width="1360" height="620">
+</div>
+
+</body>
+</html>
